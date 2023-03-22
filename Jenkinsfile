@@ -16,5 +16,17 @@ pipeline {
       }
     }
 
+    stage('Exec') {
+      steps {
+        echo 'Executing'
+      }
+    }
+
+    stage('Package') {
+      steps {
+        echo 'Package'
+      }
+    }
+
   }
 }
