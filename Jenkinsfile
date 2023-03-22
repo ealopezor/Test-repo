@@ -28,5 +28,11 @@ pipeline {
       }
     }
 
+    stage('Manual approval') {
+      steps {
+        input(message: 'Do you want to deploy?', ok: 'Yes, lets do it', id: 'id', submitter: 'submitter', submitterParameter: 'submitterParameter')
+      }
+    }
+
   }
 }
