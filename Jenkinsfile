@@ -25,7 +25,6 @@ pipeline {
     stage('Package') {
       steps {
         echo 'Package'
-        archiveArtifacts 'target/*.jar'
       }
     }
 
